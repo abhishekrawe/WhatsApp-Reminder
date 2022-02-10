@@ -1,0 +1,103 @@
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.homepage {
+  min-width: 100%;
+  min-height: 100%;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, rgb(255, 253, 125), rgb(151, 250, 184), rgb(253, 209, 158))
+
+}
+
+.homepage_header {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  min-width: 20%;
+  min-height: fit-content;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  background: white;
+  position: relative
+}
+
+.homepage_header > .button {
+  background: #1877f2;
+  border: 1px solid #1877f2;
+  color: #fff;
+  font-size: 1.25rem;
+  width: 100%;
+  text-align:center;
+  padding: 0.5rem 0;
+  margin: 0.5rem ;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.homepage_header > input{
+  border: 1px solid grey;
+  outline: none;
+  color: #1d2129;
+  margin: 0.5rem 0;
+  padding: 0.4rem 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.react-datetime-picker  {
+  width: 100% !important;
+}
+
+
+.homepage_body {
+  width: 100%;
+}
+
+.reminder_card {
+  display: flex;
+  flex-direction: column;
+  display: inline-block;
+  background: white;
+  border-radius: 8px;
+  margin: 2rem;
+  padding: 1rem;
+  max-width:350px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.reminder_card > h2 {
+  margin-bottom: 1rem;
+  color: #1877f2;
+}
+
+.reminder_card > p {
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.reminder_card > .button {
+  background: #1877f2;
+  border: 1px solid #1877f2;
+  color: #fff;
+  font-size: 1.25rem;
+  width: inherit;
+  text-align:center;
+  padding: 0.5rem 0;
+  margin: 0.5rem ;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
