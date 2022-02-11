@@ -24,6 +24,24 @@ const reminderSchema = new mongoose.Schema({
 const Reminder = new mongoose.model("reminder", reminderSchema)
 
 
+
+//Whatsapp reminding functionality by Twilio
+const accountSid = process.env.ACCOUNT_SID; 
+const authToken = process.env.AUTH_TOKEN; 
+const client = require('twilio')(accountSid, authToken); 
+ 
+client.messages 
+      .create({ 
+         body: 'Hi Demo Message From Abhishek Rawe', 
+         from: 'whatsapp:+14155238886',       
+         to: 'whatsapp:+919931500039' 
+       }) 
+      .then(message => console.log(message.sid)) 
+      .done();
+
+
+
+
 //API routes
 app.get("/getAllReminder", (req, res) => {
     Reminder.find({}, (err, reminderList) => {
