@@ -21,7 +21,7 @@ const reminderSchema = new mongoose.Schema({
     isReminded: Boolean
 })
 
-const Reminder = new mongoose.modelNames("reminder", reminderSchema)
+const Reminder = new mongoose.model("reminder", reminderSchema)
 
 
 //API routes
@@ -38,15 +38,15 @@ app.get("/getAllReminder", (req, res) => {
 })
 
 app.post("/addReminder", (req, res) => {
-    const { remindMsg , remindAt } = req.body
+    const { reminderMsg , remindAt } = req.body
     const reminder = new Reminder({
         reminderMsg,
         remindAt,
         isReminded: false
     })
     reminder.save(err => {
-        if (err) {
-            console.Console.log(err)
+        if(err) {
+            console.log(err)
         }
         Reminder.find({}, (err, reminderList) => {
             if(err) {
@@ -61,7 +61,7 @@ app.post("/addReminder", (req, res) => {
 })
 
 app.post("/deleteReminder", (req, res) => {
-    reminder.deleteOne({_id: req.body.id}, () => {
+    Reminder.deleteOne({_id: req.body.id}, () => {
         Reminder.find({}, (err, reminderList) => {
             if(err) {
                 console.log(err)
