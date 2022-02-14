@@ -32,7 +32,7 @@ function App() {
     <div className="App">
       <div className="homepage">
         <div className="homepage_header">
-          <h1> Remind Me ⏳  </h1>
+          <h1> WhatsApp Reminder ⏳  </h1>
           <input
             type="text"
             placeholder="Reminder notes here...."
