@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom right, rgb(255, 253, 125), rgb(151, 250, 184), rgb(253, 209, 158))
+  background: linear-gradient(to bottom right, rgb(10, 10, 10), rgb(80, 167, 224), rgb(7, 40, 63))
 
 }
 
@@ -30,7 +30,8 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
   background: white;
-  position: relative
+  position: relative ;
+  background: rgba(255, 255, 255, 0.377);
 }
 
 .homepage_header > .button {
@@ -70,7 +71,7 @@
   display: flex;
   flex-direction: column;
   display: inline-block;
-  background: white;
+  background: rgba(255, 255, 255, 0.377);
   border-radius: 8px;
   margin: 2rem;
   padding: 1rem;
@@ -80,7 +81,7 @@
 
 .reminder_card > h2 {
   margin-bottom: 1rem;
-  color: #1877f2;
+  color: #0144fc;
 }
 
 .reminder_card > p {
