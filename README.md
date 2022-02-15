@@ -1,4 +1,4 @@
-<h1 align="center">WhatsApp Reminder🔔</h1>
+<h1 align="center">WhatsApp💜 Reminder ⏰ </h1>
 
 <h4 align="center">WhatsApp  Reminder is a whatsapp bot built with Twilio's APIs, ReactJs, ExpressJS and MongoDB. It can send reminders through text messages in whatsapp.</h4>
 
@@ -11,26 +11,28 @@
 
 
 ## 🐱‍🏍Result 
-- Some Glimpse of our Results
+- Some Glimpse of our Results<br>
 ✔️Here you can See the Message reminder recived on whatsapp .
 ![Pic 1](Preview/fullvid.gif)
 ✔️Here you can see how we create different - different reminder .
 ![pic2](Preview/vid.gif)
 
 
-### Starting Frontend
+### 🧧Starting Frontend
 
-1. Clone this Repository `https://github.com/abhishekrawe/WhatsApp-Reminder-App.git`
+1. Clone this Repository `https://github.com/abhishekrawe/WhatsApp-Reminder.git`
 2. Go to --> `Whatsapp-reminder` , cd to --> `reminder-frontend` and `npm install` in terminal
 3. `npm start`.
 
-### Starting Backend
+### 🃏Starting Backend
 
-1. Clone this Repository `https://github.com/abhishekrawe/WhatsApp-Reminder-App.git`
+1. Clone this Repository `https://github.com/abhishekrawe/WhatsApp-Reminder.git`
 2. Go to --> `Whatsapp-reminder` , cd to --> `reminder-backend` and `npm install` in terminal
 3. `node index.js`
 
-### Set Up whatsapp for Twilio
+![refrence](Preview/setup.png)
+
+### 🔴Set Up whatsapp for Twilio
 
  1.  [Login](https://www.twilio.com/login) with your email ID on twilio , it give you free trial `$15.425`
  2.  [Go to Console](https://www.twilio.com/console/) where you have three options in left side Phone number 📞 , messaging 📧and Voice ➿ .
@@ -38,6 +40,7 @@
  3. Select `Messaging📧` -> Go to `Try it Out` -> and Select  `Send a Whatsapp message`
 
  4. [Click on this link](https://api.whatsapp.com/send/?phone=%2B14155238886&text=join+mixture-cent&app_absent=0). This will open up whatsapp on your mobile / PC.
+ ![pic3](Preview/picture.png)
 5. The invitation text has already been filled into the message box, just send the given message (for eg join mixture-cent) or any message and you are in! 🎉.
    - [Twilio refrence WhatsApp Business API ](https://www.twilio.com/whatsapp).
    - Whatsapp reminding functionality by Twilio added in index.js
@@ -67,7 +70,7 @@
 
 
 
-### Setting up reminders
+### 🔔Setting up reminders
 
 - Simple click on `Reminder notes Here......` and Add your Reminder that you want to remind .
 - The general format is `set <Reminder-name (Not required)> <task-time (required)> <task-date (it take Present date if not given)>`.
@@ -78,6 +81,32 @@
   - Set a reminder for Conducting Session at 5:23 PM today --> `Session on ReactJS` `2/15/2022 5:23 AM `
   - Set a reminder for Todays for Going to Gym at 7:00 PM --> `Go to Gym` `2/15/2022(No Need to give the Date- It take by Default for Today ) 5:23 AM `
 
-### Keep in mind
+### 😪Keep in mind
 
 Just like me, this bot is lazy 🦥 and needs to sleep 😴 0000 to 0600 (IST) everyday (due to Heroku's policies). So try **NOT** to set any reminders for the above timings. Also Twilio's WhatsApp API is in beta which may cause issues or even stop working all together. **Also this project is eventually destined to be sun-setted after the trial balance of Twilio is over**.
+
+
+
+
+
+## 🐛 Bug Reporting
+
+Feel free to [open an issue](https://github.com/abhishekrawe/WhatsApp-Reminder/issues) on GitHub if you find any bug.
+
+## ⭐ Feature Request
+
+Feel free to [Open an issue](https://github.com/abhishekrawe/WhatsApp-Reminder/issues) on GitHub to request any additional features you might need for your use case.
+
+## ♻️ Contributing
+
+* **Abhishek Rawe** - *Developer* - [Website](https://abhishekrawe.netlify.app/)
+
+## ❤️Authors
+
+* **Abhishek Rawe** - *Developer* Who's the author of those contents - [Abhishek Rawe](https://www.linkedin.com/in/abhishekrawe/)
+
+## 📜 License
+
+This software is open-source, licensed under the [MIT License](https://abhishekrawe.netlify.app/blob/main/LICENSE).
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/abhishekrawe)
