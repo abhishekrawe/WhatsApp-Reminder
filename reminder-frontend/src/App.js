@@ -11,20 +11,20 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://whatsapp-reminder-backend.herokuapp.com/getAllReminder")
+      .get("http://localhost:9000/getAllReminder")
       .then((res) => setReminderList(res.data));
   }, []);
 
   const addReminder = () => {
     axios
-      .post("https://whatsapp-reminder-backend.herokuapp.com/addReminder", { reminderMsg, remindAt })
+      .post("http://localhost:9000/addReminder", { reminderMsg, remindAt })
       .then(res => setReminderList(res.data));
       setReminderMsg("")
       setRemindAt()
   };
 
   const deleteReminder = (id) => {
-    axios.post("https://whatsapp-reminder-backend.herokuapp.com/deleteReminder", { id })
+    axios.post("http://localhost:9000/deleteReminder", { id })
     .then( res => setReminderList(res.data))
   };
 
