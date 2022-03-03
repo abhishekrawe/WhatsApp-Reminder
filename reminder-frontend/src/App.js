@@ -62,7 +62,7 @@ function App() {
                 <h2>{reminder.reminderMsg}</h2>
                 <h3>Remind Me at ⏰:</h3>
                 
-                <p>{String(new Date().toLocaleString("en-US", {timezone:"Asia/Kolkata"}))}</p>
+                <p>{String(new Date(reminder.remindAt.toLocaleString("en-US", {timezone:"Asia/Kolkata"})))}</p>
                 <div className="button" onClick={() => deleteReminder(reminder._id)}>Delete</div>
               </div>
             ))
