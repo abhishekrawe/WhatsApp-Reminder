@@ -67,7 +67,7 @@
 
  3. First you need to setUp clicking on Get Set Up they will Provide a Unique Messaging Service SID
  4. You can simple check it with Curl code on your terminal to get the SMS on your Phone 
- ![pic3](Preview/picture23.png)
+ ![pic3](Preview/pic3.png)
  
  ```
            const accountSid = 'AC063c8abe3c3ea8fb9f9b0d481fc69b2b'; 
