@@ -41,7 +41,7 @@
 
  4. [Click on this link](https://api.whatsapp.com/send/?phone=%2B14155238886&text=join+mixture-cent&app_absent=0). This will open up whatsapp on your mobile / PC.
  ![pic3](Preview/picture.png)
-5. The invitation text has already been filled into the message box, just send the given message (for eg join mixture-cent) or any message and you are in! 🎉.
+ 5. The invitation text has already been filled into the message box, just send the given message (for eg join mixture-cent) or any message and you are in! 🎉.
    - [Twilio refrence WhatsApp Business API ](https://www.twilio.com/whatsapp).
    - Whatsapp reminding functionality by Twilio added in index.js
 
@@ -59,8 +59,32 @@
                     .then((message) => console.log(message.sid))
                     .done();
      ```
+### 🔴Set Up SMS with Messaging Service
 
-6. How to add your own ACCOUNT_SID  and AUTH_TOKEN
+ 1.  [Go to Console](https://www.twilio.com/console/) where you have three options in left side Phone number 📞 , messaging 📧and Voice ➿ .
+
+ 2. Select `Messaging📧` -> Go to `Try it Out` -> and Select  `Send an SMS with Messaging Services`
+
+ 3. First you need to setUp clicking on Get Set Up they will Provide a Unique Messaging Service SID
+ 4. You can simple check it with Curl code on your terminal to get the SMS on your Phone 
+ ![pic3](Preview/picture23.png)
+ 
+ ```
+           const accountSid = 'AC063c8abe3c3ea8fb9f9b0d481fc69b2b'; 
+           const authToken = '[AuthToken]'; 
+           const client = require('twilio')(accountSid, authToken); 
+ 
+           client.messages 
+           .create({ 
+           body: 'Hello Abhishek',  
+           messagingServiceSid: 'MG061b937fb314708171979e467a50708c',      
+           to: '+919931500039' 
+           }) 
+          .then(message => console.log(message.sid)) 
+          .done();
+```
+
+5. How to add your own ACCOUNT_SID  and AUTH_TOKEN
 
       [Go to Console](https://www.twilio.com/console/) here you find your own unique account_sid and Auth_id 
 
